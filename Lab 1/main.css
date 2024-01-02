@@ -1,0 +1,41 @@
+html {
+    font-size: 20px;
+    font-family: "Lucida Console", monospace;
+}
+
+body {
+    background-color: lavender;
+    color: black;
+}
+
+p {
+    margin-right: 270px;
+    margin-left: 270px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-right: 270px;
+    margin-left: 270px;
+}
+
+li {
+    margin-right: 350px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+}
+
+img {
+    margin-right: 270px;
+    margin-left: 270px;
+}
+
+table, tr, th, td {  margin-right: 270px;
+                    margin-left: 270px;
+                    border: 1px solid black; 
+                    border-collapse: collapse;
+                    padding: 0.5rem;}

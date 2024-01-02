@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Demonstrates some basic HTML form elements" />
+  <meta name="keywords" content="HTML, Form, tags" />
+  <meta name="author" content="Luu Tuan Hoang"  />
+  <title>Help Desk</title>
+</head>
+<body style="max-width: 600px; margin: 0 auto;">
+    <img src="./logo.png" alt=""/>
+    <h1>CWA Help Desk Appointment</h1>
+    <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday <br/> Check BlackBoard for when CWA tutors willl be there.</p>
+    <form>
+        <fieldset>
+            <legend>Student details</legend>
+            <p>
+                <label for="id">StudentID</label>
+                <input type="text" name="id" id="id" required="required" pattern="[0-9]" minlength="7" maxlength="10"/>
+            </p>
+            <p>
+                <label for="giv">Given Name</label>
+                <input type="text" name="giv" id="giv" required="required" pattern="[A-Za-z]" maxlength="10"/>
+            </p>
+            <p>
+                <label for="fam">Family Name</label>
+                <input type="text" name="fam" id="fam" required="required" pattern="[A-Za-z]" maxlength="10"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your unit</legend>
+            <p>
+                <label for="cos10011">Cos10011</label>
+                <input type="radio" name="unit" id="cos10011" value="cos10011" required="required"/>
+            
+                <label for="cos60004">Cos60004</label>
+                <input type="radio" name="unit" id="cos60004" value="cos60004" required="required"/>
+            
+                <label for="cos60007">Cos60007</label>
+                <input type="radio" name="unit" id="cos60007" value="cos60007" required="required"/>
+            </p>
+            
+		    <p><label for="tutor">Your tutor</label> 
+                <select required="required" name="tutor" id="tutor">
+                    <option value="">Select</option>	
+                    <option value="phuonganh">Ms. Phuong Anh</option>			
+                    <option value="james">Mr. James</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Issues</legend>
+			<p><label for="html">HTML</label> 
+				<input type="checkbox" id="html" name="category[]" value="html" checked="checked"/>
+			</p>
+			<p><label for="css">CSS</label> 
+				<input type="checkbox" id="css" name="category[]" value="css"/>
+			</p>
+			<p><label for="js">Javascript</label> 
+				<input type="checkbox" id="js" name="category[]" value="js"/>
+			</p>
+			<p><label for="php">PHP</label> 
+				<input type="checkbox" id="php" name="category[]" value="php"/>
+			</p>
+			<p><label for="mysql">MySQL</label> 
+				<input type="checkbox" id="mysql" name="category[]" value="mysql"/>
+			</p>
+            
+            <label for="desc">Description of issues</label>
+            <textarea name="desc" id="desc" placeholder="Write description of your problems here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" required="required"/>
+            </p>
+            <p>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" required="required"/>
+            </p>
+        </fieldset>
+        <button type="submit">Book</button>
+        <button type="reset">Reset form</button>
+    </form>
+</body>

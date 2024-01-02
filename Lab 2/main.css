@@ -1,0 +1,34 @@
+html {
+	margin: 0 auto;
+	width: 700px;
+	justify-content: center;
+}
+table {
+	border: 0.5px solid black;
+	border-spacing: 0px;
+	padding: 0;
+}
+td {
+	border: 0.5px solid black;
+	margin: 0;
+	padding: 0 10px 0 0;
+}
+h3 {
+	margin-bottom: 10px;
+}
+p {
+	margin: 5px 0;
+}
+ul,
+ol {
+	margin-top: 0;
+}
+br {
+	margin: 2.5em 0;
+	line-height: 5em;
+}
+
+.footer-column {
+	width: 50%;
+	float: left;
+}
